@@ -27,7 +27,7 @@ jobs:
           git config --global user.email harisurya12@gmail.com
           git config --global user.name harisurya
           git status
-          git remote add origin https://${{secrets.commit_secret}}@git@github.com/harisurya/udahari.git
+          git remote add origin https://${{secrets.commit_secret}}@github.com/harisurya/udahari.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
