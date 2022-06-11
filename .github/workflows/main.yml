@@ -10,10 +10,11 @@ jobs:
       my_secret: ${{secrets.commit_secret}}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: subosito/flutter-action@v1
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
         with:
-          channel: 'dev'
+          channel: 'stable' # or: 'beta' or 'master'
+      - run: flutter --version
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web --release
@@ -26,7 +27,6 @@ jobs:
           git config --global user.email harisurya12@gmail.com
           git config --global user.name harisurya
           git status
-          # change this remote url for examle your remote url is https://github.com/onatcipli/flutter_web.git then the following:
           git remote add origin https://${{secrets.commit_secret}}@git@github.com:harisurya/harisurya.github.io.git
           git checkout -b gh-pages
           git add --all
