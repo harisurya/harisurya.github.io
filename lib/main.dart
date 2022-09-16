@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         child: BlocBuilder<ThemeBloc, ThemeState>(
           builder: (_, themestate) => MaterialApp(
             theme: ThemeData(primaryColor: mainColor),
-            title: "UDAHARI.COM",
+            title: "udahari.com",
             home: Wrapper(),
             debugShowCheckedModeBanner: false,
             // navigatorObservers: <NavigatorObserver>[observer],

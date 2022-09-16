@@ -21,7 +21,7 @@ class SplashPageState extends State<SplashPage> {
   }
 
   Future<Timer> loadData() async {
-    return Timer(const Duration(seconds: 3), onDoneLoading);
+    return Timer(const Duration(seconds: 1), onDoneLoading);
   }
 
   onDoneLoading() async {
