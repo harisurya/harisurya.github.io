@@ -6,5 +6,5 @@ const profilePicPath = "assets/profilepic.png";
 const mailPath = "assets/email.png";
 const linkedlnPath = "assets/linkedIn.png";
 const igPath = "assets/instagram.png";
-const ytPath = "assets/youtube.png";
+const ytPath = "assets/youTube.png";
 const twitterPath = "assets/twitter.png";
